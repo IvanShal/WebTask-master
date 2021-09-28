@@ -1,0 +1,117 @@
+.centerDiv{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.mainPart{
+    float: left;
+    width: 24%;
+    height: 100%;
+    background: #e2e2e2;
+}
+
+
+.optionalPart{
+    float: right;
+    background-color: #FFFFFF;
+    width: 74%;
+    height: 100%;
+}
+
+.optionalPartOfOptions{
+    margin-top: 0.15in;
+    display: flex;
+}
+
+.optionalPartNames{
+    float: left;
+    background-color: #f1f1f1;
+    width: 40%;
+}
+
+.optionalPartDesc{
+    float: right;
+    background-color: #e2e2e2;
+    width: 60%;
+}
+
+.photo{
+    width: 80%;
+    height: auto;
+    text-align: left;
+    padding-top: 5%;
+}
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1, h2{
+    margin: 10px;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+h1{
+    font-family:Roboto;
+    font-size:24px;
+}
+
+h2{
+    font-family:Roboto;
+    font-size:20px;
+    font-weight: 300;
+}
+
+figcaption{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@media screen and (max-width : 1024px) {
+    .centerDiv {
+        margin: 0 auto;
+        width: 97.65625%;
+    }
+}
+@media screen and (max-width : 800px) {
+    .mainPart{
+        float: top;
+        width: 100%;
+        height: max-content;
+        display: flex;
+    }
+    .optionalPart{
+        float: bottom;
+        width: 74%;
+        height: 100%;
+    }
+    .optionalPart{
+        float: right;
+        width: 100%;
+        height: max-content;
+    }
+    .optionalPartNames{
+        float: top;
+        width: 100%;
+        height: max-content;
+    }
+
+    .optionalPartDesc{
+        float: bottom;
+        width: 100%;
+        height: max-content;
+    }
+    .optionalPartOfOptions{
+        flex-direction: column;
+    }
+    h1{
+        padding-left: 10px;
+    }
+}
